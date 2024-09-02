@@ -1,0 +1,29 @@
+.topContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	padding: 20px 0px 20px 0px;
+}
+
+.image {
+	width: 700px;
+}
+
+.topText {
+	position: absolute;
+	background-color: #fff;
+	border: 0.5px rgb(233, 190, 89) solid;
+	width: 550px;
+	text-align: center;
+	padding: 20px;
+}
+
+.bookmarkIcon {
+	cursor: pointer;
+	margin: 5px;
+}
+
+.bookmarkIcon:hover {
+	opacity: 0.6;
+}

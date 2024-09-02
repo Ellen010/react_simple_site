@@ -1,0 +1,78 @@
+@font-face {
+	font-family: "Old London";
+	src: url("/fonts/OldLondon.ttf");
+}
+/* 
+.header {
+	border-bottom: 2px rgb(233, 190, 89) solid;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	font-size: 44px;
+	font-family: "Old London";
+	text-shadow: 1px 1px 0px #000;
+}
+
+.logoContainer {
+	width: 100vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 30px 0px 30px;
+	src: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAZlBMVEX///8AAAB0dHT6+vro6Oj19fXv7+/Z2dmwsLDg4ODr6+vIyMjExMRERETQ0NCXl5cuLi5QUFAiIiKfn5+lpaVnZ2eKioq4uLhsbGyDg4MYGBhfX18nJycdHR0ODg6+vr49PT02Njb9JtPYAAAJcElEQVR4nO2d6ZaqOhBGZQiDyCSzIMP7v+QF9UDQhAwkkr7L7885vbpXZEuoVFUqxUn7H+l09AWI1A9GVf1gVNUPRlX9YFTVD0ZV/WCk6N5EUdRcbzuGUAEmqvM0dYruocJJ0zSvB56Bjoa5+roTuOC0FnADR/evrIMdCzPojns+oXV2Hb1nG+5ImD73gIFBmWRYQe5TjVTXj3+Og2nyYIvkxWMnA3GksnPDx3+Ogml1m0jymm75toErXeNkN4//HgTjF5Qok7wYO070+E6M9PnTGuZ2l0kw61rhnnqMqgY5TFy5j1/br8tew5QJo/3gkp+yoYxyPm7OaNPT10w1Qg0BE3WGQ2c+dqjNPGaWcaqVLTzIUIfefHftCAWTgZNRyL431E/+WnY10zRZXtjLOmtU/34Bw1yd6Vcdcn6KY3G5WE4n82nVblnSuRZs1L3ZU4BhfOv5S6ksJifL6WR1VRleAvNtdQLZPDgE0yavXwcSWRjN2Nt1oxwGZxkdgrnPE0AaTc1/X3CyIXcUgqmt+S8ugxSWmO/Z35IJ22wIBrb+F/yiy6+oE85i6fAHQDAB9EdGJ4EmJDuWjALhym9bYPyVzTQuwldPaBqLYknW8dsCo799b55omgB9RTtY0mj1Ae0CE77/bSB2pn2ML5Yl0rt6gfn0/uzs85K41Yu2yiBZXJUhSwLL7GeYGyLCMEtxMI5olvnZH7IwGP2b0UWbYQbUlDYrzKUxS/RyCV5X5udp8PQL0usC4yM/DSSCYByxZjmYMhiR7iyemtdD1ix+z129VAhxojNeXxktu6rzzoQ9NXuim2Fq3Ffnxe3GVdKpDTFflSiZD09ggcH+oYuOwFkU8wSXDDo/nyAKmNM52bt+7ohiaGS9kgA0MCdw2Wejm1TqLJu9GqIBeMrMmbPYkPqLTBYj/fcYLDDbMSDY40YLtmVvcj5zAOh1BpLLvYC2lcxZVixRwOIBkKNAXj/6nhCH3sECJWEX34wiDAQUKXmEGtF+GaQUXgS3vGaEgipiX0Ijliw5k0C6sksb8QxSxkUfWGGkGTMzXC/nC0xFO0JXRu+Xuy1feIz5lFu9bVosMATbDOMUJdMGdyzHMgfl+4xfYFqG72/EYXh0JKT+RhWfCx+UamKyOeZFp/YJpMDkiLkOwZRsS5sVVJS7H/WuBDNaJuqDIJiGdWoDO6lpZpv4hNkYjBFgWo61zbrk5GBHBgwytw/vz2w7zhgZZpddt++PDJgLCYY3sW24Sd1v7FPLeGYKEoym8w9up3qM83RkrDMO6oNWMP2uUN0tEj0eEAZbhgeATIGt6wD0nbP7HHSJXsfD2kGQ4ZuFGkJrmGG/fwtMdySq9NqfzVwjwWvOyTCC0igGsM4jkpPkelYP9xt7RQZRyLD3DeaaikujGsYIZbp2EEhwZ3QKGM2XnK4TJeRuy0eJViY3XydKNRWMlktOC4sRJUybCN8UFi8DmcVDVALyOJzf1hmZ9UKVNV6lZlOFyEWGUjNMBlluv1N9pnnInMoMk1jekuzwHcWtQIGM2ReYKRDO/ZdXNSQSYhCBSpHpoRnmkQMcI60qHqYf77nSNCEy2phh5hygFTh5Gd8l70PsVL4NswrMgGkHhcIwFtI1g6zZ0RfIIhvpAEA7Z6pbY1gBeqdohukVnlUfwpRdzjB39Zf9RQ46Wce42aSGAOYUygKTH32J9MKVjvHszxwuG7ONj6meVVsYYwbD5H/FOC8lGXiYq/h6cDmycOUVqIMNqsvEFcKutjT+RmIGf6AOhrn/jaXGQAczbzBSNlLECyDzzB8wMpLC4oVxmd9hZBxwEa8LdtNxDSO9ylWA/h2XJcL8hby5iZ1lH0nAfSfcvqGNA3HvMDe5ha77tTHLPtOzqk80a6Pw9TPXrLhF2zp2iUicq+3VbNXwonYBVN48O29VUiE7NXAfppYvZ6tMB912olT2uUGnMjdhtFrRGBq9yUSAEVGrIUPI+h8ijKaFCu5pnPGuzDaMVlI0ufmykCVzVDDakL53RThYYPPxJzTRafXCVQknIJS6EzoCDaVjq4OD3i+jhtG0pg49RXBc0uEqil5Nt75MlFhE0buybDCj2ihODo9zcOlyIsw9rmP/pTiuM704ftUhH7PGwESOYQBgjQLIZi8HiHxjsNOsOv5OrGWk5GMHOJhYNU8Tn/ojw6hWQmekFH3ksNasVitAo3hitkyzUrcGnyyng1GqygFdLEcPI6EbEbcA3RH+DZhGCR/moY6KZdOdUafQibIj5qZvpsqOLSEmo4O5q5F3ppxkJK9ZibyzSd0jghACKLBdA0jxJTVMmx9O09F3KSUFZ4eXBLP0JSNGmtdjk4EW/SSjCZtvR94bfDUGH4z05kRbCpjaRFElNOqjLPSZrXMPXXZmEHhIkEGAsW8PbY/z6oDEpoE8JisARoudrz85DmvHdfru87es+O4C6g2MLEyt9O/6N+8OR09StvcC3OrQtr7z8LgcHUnZYEZnzS/Tj87cEmTSxjB7YEbdhzp3LrZUvwBb7SsaZlJ79+sqTGXtejJ5ZLthnpIVu1lUWTKhMJGsenuQcLYh5Ya517ISBBYvCzdMnMhacnjnGDdMVEnbtN3BwgdTy/MEzB0sPDBDIs+DdqvvvrRNZjBgszS02w+jy6w/2dvvngmmkXt4uxv2sTDAXEePWSYK91LJDHPtdcmn0Pn79LLB3P0slesknwyPYmd8P0wbV2lwlhzAWGJe4rUNM+ihY8uvALKrPX26yTC3xteTTkb/qw8BRK9STph2iGb1ff8qYsoL25U9t15yKZpX0sLc8ktwecoLAts1z49Spm+l/EBB1VeUEkYbwgP3k2xd5KsVp2fmsP4/RsjY+ZkCZno9xAE44CJibfmEmcrLv7ylBAKezBgdzOjae1/EAYGgpQUDozVV9yVrbHmUb/3lh5kW/G+Uy5+9XMb77d5hpnL5VHJxpllU0l6m+uHOXONcIo6bZIO4RZIIM5WXl+LfSPiQrfd78hU8MJOiULiLCRKpIBsw2uQXiAvIgFuIXiDZYMYwQE89c6/LaYCzl9K/Q0AazKhoequwyXuHDMu0i7yU+7phSOQcQBOPQIHLCjR14nOqLP4aiUaZnWmbvq7S4kIZeAIz6JwQ3e9cqhiSgLcoLvM8TMfbhPGxLTso0jD/8v1YxJ5rvkV+nOkolXXsc7w4SJx27Wmqph+MqvrBqKofjKr6waiqH4yq+l/B/Ae2AZ3sl4qStAAAAABJRU5ErkJggg==");
+}
+
+.linkContainer {
+	width: 500px;
+	margin-bottom: 15px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: 11px;
+	letter-spacing: 1px;
+}
+
+.userSection {
+	font-size: 22px;
+	width: 12vw;
+	cursor: pointer;
+}
+
+.userSection:hover {
+	opacity: 0.8;
+}
+
+.date {
+	width: 12vw;
+	text-align: center;
+}
+
+.link {
+	width: 150px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.link:hover {
+	font-weight: 600;
+	color: rgba(233, 190, 89);
+}
+
+.registerContainer {
+	display: flex;
+	margin-bottom: 10px;
+	border-top: 0.5px lightgray solid;
+}
+
+
+
+.logoutSection {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+} */
