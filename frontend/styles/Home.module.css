@@ -1,50 +1,11 @@
-.header {
-	display:flex;
-	width:100%;
+.articlesContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
 }
-.leftContainer {
-	/* background-image: url(./background.png); */
-	/* justify-content: center; /* Center horizontally */
-	/* align-items: center; Center vertically */ 
-	/* position: relative; Positioning context for absolute positioning */
-	flex:30%; 
-  }
-.background {
-	width: 100%;
-  height: 100%;
-}
-.logoClear {
-	position: absolute;
-	top: 50%; /* Align vertically at 50% from the top */
-	left: 50%; /* Align horizontally at 50% from the left */
-	transform: translate(-50%, -50%); /* Center the image */
-	z-index: 1; /* Ensure the logo is on top of the background */
-  }
 
 .sectionTitle {
-	margin-left: 0px;
+	margin-left: 25px;
 }
-.rightContainer {
-	background-color: blue;
-	/* justify-content: right;
-	align-items: center; */
-	/* width:70%; */
-}
-.logo {
-	background-image: url(../public/background.jpg);
-	height:100px;
-	width:100px;
-  }
-  .title {
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	font-size: 50;
-  }
-
-  .link {
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	font-size: 14;
-  }
-  .already {
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	font-size: 14;
-  }

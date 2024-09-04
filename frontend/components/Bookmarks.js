@@ -16,7 +16,7 @@ function Bookmarks() {
 	return (
 		<div>
 			<Head>
-				<title>Morning News - Bookmarks</title>
+				<title>FINSI - My progress</title>
 			</Head>
 			<div className={styles.container}>
 				<h2 className={styles.title}>Bookmarks</h2>

@@ -15,7 +15,7 @@ function App({ Component, pageProps }) {
   return (
     <Provider store={store}>
       <Head>
-        <title>Morning News</title>
+        <title>FINSI</title>
       </Head>
       <Header />
       <Component {...pageProps} />
